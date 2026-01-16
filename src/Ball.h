@@ -19,4 +19,4 @@ public:
 private:
     float radius;
     bool active;
-}
+};

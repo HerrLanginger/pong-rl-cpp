@@ -28,4 +28,4 @@ private:
     bool isPaused;
 
     void CheckCollisions();
-}
+};

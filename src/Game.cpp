@@ -1,6 +1,38 @@
 #include "Game.h"
 #include "Constants.h"
 
+void Game::Run()
+{
+}
+
+void Game::ProcessInput()
+{
+    if (IsKeyDown(KEY_ESCAPE))
+    {
+        isPaused = true;
+    }
+
+    float deltaTime = GetFrameTime();
+
+    if (IsKeyDown(KEY_W))
+    {
+        playerLeft.MoveUp(deltaTime);
+    }
+    else if (IsKeyDown(KEY_S))
+    {
+        playerLeft.MoveDown(deltaTime);
+    }
+
+    if (IsKeyDown(KEY_UP))
+    {
+        playerRight.MoveUp(deltaTime);
+    }
+    else if (IsKeyDown(KEY_DOWN))
+    {
+        playerRight.MoveDown(deltaTime);
+    }
+}
+
 void Game::UpdateGame()
 {
     if (isPaused)
