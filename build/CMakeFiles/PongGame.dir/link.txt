@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/PongGame.dir/link.d CMakeFiles/PongGame.dir/src/main.cpp.o CMakeFiles/PongGame.dir/src/Game.cpp.o CMakeFiles/PongGame.dir/src/Ball.cpp.o CMakeFiles/PongGame.dir/src/Paddle.cpp.o -o PongGame  _deps/raylib-build/raylib/libraylib.a -lpthread /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/librt.a -lm -ldl -lm
